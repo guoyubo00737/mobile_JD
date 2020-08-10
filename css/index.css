@@ -1,0 +1,315 @@
+/* 1. jd-search */
+
+#jd-container {
+    /* 撑满100%，居中 */
+    width: 100%;
+    margin: 0 auto;
+
+    min-width: 320px;
+    max-width: 640px;
+}
+
+/* jd-search */
+#jd-search {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 40px;
+    z-index: 200;
+}
+
+#jd-search>.jd-search-box {
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+
+    height: 40px;
+    margin: 0 auto;
+    background-color: rgba(201, 21, 35, 0);
+    position: relative;
+}
+
+#jd-search>.jd-search-box>.icon-logo {
+    position: absolute;
+    left: 10px;
+    top: 4px;
+
+    width: 60px;
+    height: 36px;
+    background-position: 0 -103px;
+}
+
+#jd-search>.jd-search-box>form {
+    position: relative;
+    padding-left: 70px;
+    padding-right: 50px; 
+
+    width: 100%;
+}
+
+#jd-search>.jd-search-box>form>.icon-search {
+    position: absolute;
+    left: 80px;
+    top: 10px;
+
+    width: 20px;
+    height: 20px;
+    background-position: -60px -109px;
+}
+
+#jd-search>.jd-search-box>form>input {            
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+
+    margin-top: 5px;
+    padding-left: 40px; 
+}
+
+#jd-search>.jd-search-box>.login {
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+    width: 50px;
+    height: 40px;
+
+    /* 文字 */
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+}
+/* jd-search end */
+
+/* jd-banner */
+#jd-banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#jd-banner>ul:first-child {
+    width: 1000%;
+    transform: translateX(-10%);
+    -webkit-transform: translateX(-10%);
+}
+
+#jd-banner>ul:first-child>li {
+    width: 10%;
+    float: left;
+}
+
+#jd-banner>ul:first-child>li>a {
+    display: block;
+    width: 100%;
+}
+
+#jd-banner>ul:first-child>li>a>img {
+    display: block;
+    width: 100%;
+}
+
+#jd-banner>ul:last-child {
+    position: absolute;
+    /* 横向居中 */
+    width: 118px;
+    left: 50%;
+    margin-left: -59px;
+
+    height: 6px;
+    bottom: 6px;
+}
+
+#jd-banner>ul:last-child>li {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    float: left;
+    margin-left: 10px; 
+}
+
+#jd-banner>ul:last-child>li:first-child {
+    margin-left: 0;
+}
+
+#jd-banner>ul:last-child>li.now {
+    background: #fff;
+}
+/* jd-banner end */
+
+/* jd-nav */
+#jd-nav {
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc; 
+}
+
+#jd-nav>ul {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;  
+}
+
+#jd-nav>ul>li {
+    width: 20%;
+    float: left;
+}
+
+#jd-nav>ul>li>a {
+    display: block;
+    width: 100%;
+
+}
+
+#jd-nav>ul>li>a>img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 10px
+
+}
+
+#jd-nav>ul>li>a>p {
+    font-size: 12px;
+    color: #666;
+    padding: 5px 0;
+    margin-top: 5px;
+    
+    text-align: center;
+}
+/* jd-nav end */
+
+/* jd-product */
+#jd-product {
+    padding: 0 5px;
+}
+/* general jd-product-box */
+#jd-product .jd-product-box>.title {
+    height: 34px;
+    line-height: 34px;
+    border-bottom: 1px solid #ddd; 
+}
+
+#jd-product .jd-product-box>.title>h3 {
+    font-weight: normal;
+    padding-left: 23px; 
+    position: relative; 
+}
+
+#jd-product .jd-product-box>.title>h3::before {
+    content: "";
+    width: 3px;
+    height: 12px;
+    background: #d8505c;
+    position: absolute;
+    left: 10px;
+    top: 11px;
+}
+
+#jd-product .jd-product-box>.content .w_50p {
+    width: 50%;
+}
+
+#jd-product .jd-product-box>.content .w_50p>img {
+    display: block;
+    width: 100%;
+}
+
+.b-l {
+    border-left: 1px solid #ddd; 
+}
+
+.b-r {
+    border-right: 1px solid #ddd; 
+}
+
+.b-b {
+    border-bottom: 1px solid #ddd; 
+}
+
+/* s-kill */
+#jd-product .s-kill .icon {
+    width: 16px;
+    height: 20px;
+    float: left;
+    background: url(../images/seckill-icon.png) no-repeat center/16px 20px;
+    margin-top: 7px;
+}
+
+#jd-product .s-kill .name {
+    float: left;
+    font-size: 16px;
+    color: #d8505c;
+}
+
+#jd-product .s-kill .time {
+    float: left;
+}
+
+#jd-product .s-kill .time>span {
+    float: left;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+    background: #333;
+    margin-left: 3px;
+    margin-top: 9px;
+}
+
+#jd-product .s-kill .time>span:nth-child(3n) {
+    width: 3px;
+    color: #333;
+    background: #fff;
+}
+
+#jd-product .s-kill>.title {
+    border-bottom: none; 
+}
+
+#jd-product .s-kill .product {
+    width: 100%;
+    padding: 10px 0;
+}
+
+#jd-product .s-kill .product>li {
+    width: 33.33%;
+    float: left;
+}
+
+#jd-product .s-kill .product>li>a {
+    display: block;
+    border-right: 1px solid #ddd; 
+}
+
+#jd-product .s-kill .product>li>a:last-child {
+    border-right: none; 
+}
+
+#jd-product .s-kill .product>li>a>img {
+    display: block;
+    width: 64%;
+    margin: 0 auto;
+
+}
+
+#jd-product .s-kill .product>li>p {
+    text-align: center;
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+#jd-product .s-kill .product>li>p.nowPrice {
+    color: #d8505c;
+}
+
+#jd-product .s-kill .product>li>p.oldPrice {
+    color: #666;
+    text-decoration: line-through;
+}
+/* jd-product end*/
